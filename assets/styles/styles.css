@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-bg: #1B262C;
+    --color-text: #BBE1FA;
+    --color-secondary: #0F4C75;
+    --color-hover-bottom: #3282B8;
+
+    --font-tittles:"Krona One", sans-serif;;
+    --font-texts: "Montserrat", sans-serif;
+    --font-size-text: 1.5rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-bg);
+    box-sizing: border-box;
+    color: var(--color-text);
+}
+.header{
+    padding: 2% 0  0 15%;
+}
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+.header__menu__links{
+    font-family: var(--font-texts);
+    font-size: var(--font-size-text);
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+.presentacion {
+    padding: 7% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.presentacion__contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+.presentacion__contenido__titulo{
+    font-family: var(--font-tittles);
+    font-size: 2.25rem;
+}
+.titulo-destaque {
+    color:var(--color-secondary);
+}
+
+.presentacion__contenido__parrafo{
+    font-family: var(--font-texts);
+    font-size: var(--font-size-text);
+    font-weight: 360;
+}
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion__enlaces__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: var(--font-texts);
+    font-size: var(--font-size-text);
+    font-weight: 600;
+    border: 2px solid var(--color-secondary);
+}
+.presentacion__enlaces__link:hover{
+background-color: var(--color-hover-bottom);
+}
+.presentacion__enlaces__subtitulo{
+    font-family: var(--font-tittles);
+    font-size: var(font-size-text);
+    font-weight: 400;
+}
+.presentacion__imagen{
+    width: 50%;
+}
+.footer{
+    color: var(--color-bg);
+    background-color: var(--color-secondary);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-texts);
+    font-size: var(--font-size-text);
+    font-weight: 360;
+}
+
+@media(max-width:1300px){
+.presentacion{
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+.header__menu{
+    justify-content: center;
+}
+.header{
+    padding: 10%;
+}
+.presentacion__contenido{
+    width: auto;
+}
+}
